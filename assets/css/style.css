@@ -1,0 +1,172 @@
+:root {
+    --color-gris-azulado: #ABBACD;
+    --color-azul-oscuro: #01204C;
+    --color-azul-oscuro-2: #2C486F;
+    --color-azul-oscuro-focus: #142e53;
+    --border-radius: 15px;
+    --color-verde-marino: #00FEC8;
+}
+
+@font-face {
+    font-family: 'letraCCD';
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'letraCCD-Negrilla';
+    src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+
+.fondoCCD {
+    background-image: url(../img/back.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondoCCD2 {
+    background-image: url(../img/CCD-back-2.png);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondoLogoCDD {
+    background-color: var(--color-azul-oscuro);
+    padding: 35px 40px;
+    border-radius: var(--border-radius);
+    transform: translateY(70px);
+    position: relative;
+    z-index: 3;
+}
+
+.logoCCD {
+    width: 350px;
+}
+
+.sectionLoginCCD {
+    min-height: 85vh;
+}
+
+.sectionLoginCCD div {
+    width: 50%;
+}
+
+.formLoginCDD {
+    background-color: var(--color-gris-azulado);
+    padding: 10% 5% 2%;
+    width: 60%;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 16px 27px -4px rgba(1, 32, 76, 1);
+    -webkit-box-shadow: 0px 16px 27px -4px rgba(1, 32, 76, 1);
+    -moz-box-shadow: 0px 16px 27px -4px rgba(1, 32, 76, 1);
+    position: relative;
+    z-index: 2;
+}
+
+.formLoginCDD div {
+    width: 100%;
+}
+
+.iconForm {
+    width: 15px;
+}
+
+.inputForm {
+    height: 50px;
+}
+
+.inputForm span {
+    background-color: var(--color-verde-marino);
+    padding: 18px;
+    border: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: var(--color-azul-oscuro-2);
+    color: #fff;
+    border: none;
+    transition: all .5s;
+    font-family: 'letraCCD';
+    letter-spacing: 1px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    color: #fff;
+    background-color: var(--color-azul-oscuro-focus);
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #fff;
+}
+
+.chkRecuerdame {
+    font-family: 'letraCCD-Negrilla';
+    color: var(--color-azul-oscuro);
+}
+
+.form-check-input:checked {
+    background-color: var(--color-azul-oscuro);
+    border-color: var(--color-azul-oscuro);
+}
+
+.btnSubmit {
+    background-color: var(--color-gris-azulado);
+    position: relative;
+    z-index: 1;
+    padding: 20px 0 10px;
+    width: 50%;
+    font-weight: bold;
+    color: var(--color-azul-oscuro);
+    font-family: 'letraCCD-Negrilla';
+    font-size: 1.5rem;
+}
+
+.btnSubmit:hover {
+    background-color: var(--color-azul-oscuro-focus) !important;
+    color: #fff;
+}
+
+.txtFP {
+    font-family: 'letraCCD-Negrilla';
+    color: var(--color-azul-oscuro);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.txtFP:hover {
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .formLoginCDD {
+        width: 75%;
+        padding: 10% 5% 2%;
+    }
+    .fondoLogoCDD {
+        padding: 35px 40px;
+        transform: translateY(60px);
+    }
+}
+
+@media (max-width: 768px) {
+    .fondoLogoCDD {
+        padding: 10px 20px;
+        transform: translateY(30px);
+    }
+    .logoCCD {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .fondoLogoCDD {
+        padding: 10px 20px;
+        transform: translateY(50px);
+    }
+}
